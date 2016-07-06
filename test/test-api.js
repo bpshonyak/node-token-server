@@ -5,18 +5,19 @@ var chai = require('chai');
 var chaiHttp = require('chai-http');
 var expect = chai.expect;
 
-var api = require("../server");
+var server = require("../server");
+var api;
 
 chai.use(chaiHttp);
 
 describe("api", function() {
 
   before(function () {
-    api.listen(1337);
+    api = server.listen(1337);
   });
 
   after(function () {
-    api = null;
+    api.close();
   });
 
   it("should have a status of 403", function (done) {
