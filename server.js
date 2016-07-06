@@ -141,8 +141,10 @@ apiRoutes.get('/users', function(req, res) {
 // apply the routes to our application with the prefix /api
 app.use('/api', apiRoutes);
 
+module.exports = app;
+
 // =======================
 // start the server ======
 // =======================
-app.listen(port);
+// app.listen(port);
 console.log('Magic happens at http://localhost:' + port);

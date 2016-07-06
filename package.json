@@ -28,5 +28,13 @@
     "jsonwebtoken": "^7.0.1",
     "mongoose": "^4.5.3",
     "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^2.2.0",
+    "guppy-pre-commit": "^0.3.0",
+    "request": "^2.72.0"
   }
 }
