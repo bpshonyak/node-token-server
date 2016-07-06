@@ -5,7 +5,10 @@ var chai = require('chai');
 var chaiHttp = require('chai-http');
 var expect = chai.expect;
 
-var server = require("../server");
+var server = require("../app/server");
+
+var port = server.port = 1337;
+
 var api;
 
 chai.use(chaiHttp);
@@ -13,7 +16,7 @@ chai.use(chaiHttp);
 describe("api", function() {
 
   before(function () {
-    api = server.listen(1337);
+    api = server.listen(port);
   });
 
   after(function () {
