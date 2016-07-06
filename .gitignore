@@ -1,3 +1,6 @@
+#Sensitive Files
+config.js
+
 # Logs
 logs
 *.log
